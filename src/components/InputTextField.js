@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 
 const CustomTextField = ({ id, label, value, errorMessage, ...props }) => {
   return (
-    <div class="form-group">
+    <div className="form-group">
       <label>{label}</label>
       <input
-        class="form-control"
+        className="form-control"
         type="text"
+        placeholder={errorMessage ? errorMessage : ''}
         error={!!errorMessage}
         id={id}
         name={id}
         value={value}
         fullWidth
         variant="outlined"
-        helperText={errorMessage}
         {...props} />
     </div>
   );

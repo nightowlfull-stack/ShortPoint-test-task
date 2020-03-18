@@ -4,8 +4,8 @@ import Note from '../Note'
 
 const NoteList = ({ notes, startNoteEditing, deleteNote }) => {
   return (
-    <div class="card-block">
-      <div class="row">
+    <div className="card-block">
+      <div className="row">
         {notes
           .map(note => (
             <Note

@@ -4,7 +4,7 @@ import { reducer, initialState } from '../../reducers/noteForm';
 import { validateNote } from '../../validations/noteValidator'
 import InputField from '../../../../components/InputTextField'
 import SelectField from '../../../../components/SelectField'
-import CenterButtonfrom from '../../../../components/CenterButton'
+import Button from '../../../../components/CenterButton'
 import { COLOR_OPTIONS } from '../../../../constants'
 
 const input = {
@@ -12,7 +12,7 @@ const input = {
   label: 'Note Text',
 }
 
-const AddNoteForm = ({ noteToBeEdited, onSubmit, cancelNoteEditing }) => {
+const NoteForm = ({ noteToBeEdited, onSubmit, cancelNoteEditing }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   
   useEffect(() => {
@@ -32,7 +32,7 @@ const AddNoteForm = ({ noteToBeEdited, onSubmit, cancelNoteEditing }) => {
   }
 
   return (
-    <div class="formwrapper">
+    <div className="formwrapper">
       <form>
         <InputField
           id={input.id}
@@ -49,14 +49,14 @@ const AddNoteForm = ({ noteToBeEdited, onSubmit, cancelNoteEditing }) => {
           width="100%"
           onChange={event => dispatch({ type: 'color', data: event.target.value })}
         />
-        <div class="form-group content-center">
-          <CenterButtonfrom
+        <div className="form-group content-center">
+          <Button
             title="Save Note"
             onClick={handleOnSubmit}
           />
           {
             noteToBeEdited && (
-              <CenterButtonfrom
+              <Button
                 title="Cancel"
                 color="secondary"
                 onClick={() => cancelNoteEditing()}
@@ -69,4 +69,4 @@ const AddNoteForm = ({ noteToBeEdited, onSubmit, cancelNoteEditing }) => {
   );
 }
 
-export default AddNoteForm;
+export default NoteForm;

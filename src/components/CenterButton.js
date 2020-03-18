@@ -5,7 +5,7 @@ const CenterButton = ({ title, onClick, color = "primary" }) => {
   return (
       <button
         onClick={onClick}
-        class={`btn btn-${color}`}
+        className={`btn btn-${color}`}
       >
         {title}
       </button>

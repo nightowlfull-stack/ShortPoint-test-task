@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const SelectField = ({ value, title, errorMessage, onChange, options, ...props }) => {
   return (
-    <div class="form-group">
+    <div className="form-group">
       <label>{title}</label>
       <select
         value={value}
         onChange={onChange}
-        class="form-control"
+        className="form-control"
       >
         {options && options.map(option => (
           <option key={option.value} value={option.value}>{option.label}</option>
