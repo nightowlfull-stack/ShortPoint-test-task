@@ -1,0 +1,7 @@
+.textBlock{
+  min-height:65px;
+  overflow-y: auto;
+  overflow-x: auto;
+  max-height: 64px;
+  max-width:310px;
+}

@@ -1,0 +1,142 @@
+.card-block {
+  max-width: 1040px;
+  margin: 50px auto;
+}
+
+.card-block .img-thumbnail {
+  background: #f7f7f7;
+  background: -moz-linear-gradient(top,  #f7f7f7 0%, #eaeaea 100%);
+  background: -webkit-linear-gradient(top,  #f7f7f7 0%,#eaeaea 100%);
+  background: linear-gradient(to bottom,  #f7f7f7 0%,#eaeaea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#eaeaea',GradientType=0 );
+  border: 0;
+  box-shadow: 0px 5px 5px #EDEDED;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.card-block .row {
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.card-block .col-sm-4 {
+  padding: 0 8px;
+}
+
+.green-color {
+  color: #38D4D0;
+}
+
+
+.card-block .img-thumbnail span {
+  font-weight: 700;
+}
+
+
+.card-block .img-thumbnail p {
+  color: #878787;
+  margin: 0;
+}
+
+
+.green {
+  background: #38D4D0;
+}
+
+.purple {
+  background: #D183DB;
+}
+
+.lightgreen {
+  background: #9CDB83;
+}
+
+.purple-color {
+  color: #D183DB;
+}
+
+.lightgreen {
+  background: #9CDB83;
+}
+
+
+ .lightgreen-color {
+  color: #9CDB83;
+}
+
+.borderleft {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+ .card-block .img-thumbnail .datefield {
+  border-top: 1px #D8D8D8 solid;
+}
+
+
+.card-block .img-thumbnail .datefield span{
+  color: #7E7E7E;
+  font-weight: 400;
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.mainblock {
+  padding: 20px 1px 20px 20px;
+}
+
+.red {
+  background: #F26969;
+}
+
+.red-color {
+  color:  #F26969;
+}
+
+.blue {
+  background: #37AAE1;
+}
+
+
+.blue-color {
+  color: #37AAE1;
+}
+
+.orange {
+  background: #FF9A7F;
+}
+
+
+.orange-color {
+  color: #FF9A7F;
+}
+
+
+.mainheadingblock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainheadingblock ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  visibility: hidden;
+}
+
+
+.mainheadingblock ul li {
+  padding-right: 5px;
+}
+
+
+.card-block .img-thumbnail:hover ul {
+visibility: visible;
+}

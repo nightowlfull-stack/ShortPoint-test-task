@@ -1,43 +1,46 @@
   .formwrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .formwrapper form {
-      max-width: 500px;
-      width: 100%;
-      margin-top: 100px;
-    }
+  .formwrapper form {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 50px;
+  }
 
-    .formwrapper form label {
-      color: #9E9E9E;
-    }
+  .formwrapper form label {
+    color: #9E9E9E;
+  }
 
-    .formwrapper form input,.formwrapper form select {
-      border: 2px #D4D4D4 solid;
-      box-shadow: 0px 5px 10px #E8E8E8;
-      background: #F8F8F8;
-      height: 48px;
-    }
+  .formwrapper form input,.formwrapper form select {
+    border: 2px #D4D4D4 solid;
+    box-shadow: 0px 5px 10px #E8E8E8;
+    background: #F8F8F8;
+    height: 48px;
+  }
 
-    .formwrapper form select {
-      color: #000;
-    }
+  .formwrapper form select {
+    color: #000;
+  }
 
-    .formwrapper form input::placeholder {
-      color: #000;
-    }
+  .formwrapper form input::placeholder {
+    color: #000;
+  }
 
+  .formwrapper form button {
+    background: #3ec8f8;
+    background: -moz-linear-gradient(top,  #3ec8f8 0%, #25acf3 100%);
+    background: -webkit-linear-gradient(top,  #3ec8f8 0%,#25acf3 100%);
+    background: linear-gradient(to bottom,  #3ec8f8 0%,#25acf3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ec8f8', endColorstr='#25acf3',GradientType=0 );
+    border: 0;
+    padding: 10px 21px;
+    margin-top: 20px;
+  }
 
-    .formwrapper form button {
-      background: #3ec8f8;
-      background: -moz-linear-gradient(top,  #3ec8f8 0%, #25acf3 100%);
-      background: -webkit-linear-gradient(top,  #3ec8f8 0%,#25acf3 100%);
-      background: linear-gradient(to bottom,  #3ec8f8 0%,#25acf3 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ec8f8', endColorstr='#25acf3',GradientType=0 );
-      border: 0;
-      padding: 10px 21px;
-      margin-top: 20px;
-
-    }
+  .content-center{
+    display: flex;
+    justify-content: space-evenly;
+  }
