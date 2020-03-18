@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 
 const CenterButton = ({ title, onClick, color = "primary" }) => {
   return (
-    <div class="form-group text-center">
       <button
         onClick={onClick}
         class={`btn btn-${color}`}
       >
         {title}
       </button>
-    </div >
   );
 }
 

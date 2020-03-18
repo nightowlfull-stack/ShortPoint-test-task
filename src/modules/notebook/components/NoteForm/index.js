@@ -49,19 +49,21 @@ const AddNoteForm = ({ noteToBeEdited, onSubmit, cancelNoteEditing }) => {
           width="100%"
           onChange={event => dispatch({ type: 'color', data: event.target.value })}
         />
-        <CenterButtonfrom
-          title="Save Note"
-          onClick={handleOnSubmit}
-        />
-        {
-          noteToBeEdited && (
-            <CenterButtonfrom
-              title="Cancel"
-              color="secondary"
-              onClick={() => cancelNoteEditing()}
-            />
-          )
-        }
+        <div class="form-group content-center">
+          <CenterButtonfrom
+            title="Save Note"
+            onClick={handleOnSubmit}
+          />
+          {
+            noteToBeEdited && (
+              <CenterButtonfrom
+                title="Cancel"
+                color="secondary"
+                onClick={() => cancelNoteEditing()}
+              />
+            )
+          }
+        </div>
       </form>
     </div>
   );
