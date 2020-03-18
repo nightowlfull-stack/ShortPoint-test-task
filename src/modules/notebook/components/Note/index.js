@@ -2,6 +2,7 @@ import React from 'react';
 import './note.css'
 import pencilImage from '../../../../images/pencil.png'
 import trashImage from '../../../../images/trash.png'
+import { formatTime } from '../../../../utils/time'
 
 const Note = ({ note, editNote, deleteNote }) => {
   return (
@@ -19,7 +20,7 @@ const Note = ({ note, editNote, deleteNote }) => {
           <p className="textBlock">{note.noteText}</p>
         </div>
         <div className="datefield">
-          <span>{note.timeCreated.slice(0, note.timeCreated.indexOf(',') + 1) + note.timeCreated.slice(note.timeCreated.indexOf(',') + 6, note.timeCreated.length)}</span>
+          <span>{formatTime(note.timeCreated)}</span>
         </div>
       </div>
     </div >
