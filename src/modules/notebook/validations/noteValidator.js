@@ -7,7 +7,7 @@ export const validateNote = values => {
 
   requiredFields.forEach(field => {
     if (!values[field]) {
-      errors[field] = `Please Enter ${field}`;
+      errors[field] = `Note text can't be empty`;
     }
   });
 

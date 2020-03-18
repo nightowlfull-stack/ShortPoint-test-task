@@ -29,10 +29,11 @@ const Home = ({
         noteToBeEdited={noteToBeEdited}
         cancelNoteEditing={cancelNoteEditing}
       />
-      <NoteList 
-       notes={notes}
-       deleteNote={deleteNote}
-       startNoteEditing={startNoteEditing}/>
+      <NoteList
+        notes={notes}
+        deleteNote={deleteNote}
+        startNoteEditing={startNoteEditing}
+      />
     </React.Fragment>
   )
 }
