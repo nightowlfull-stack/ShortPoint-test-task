@@ -51,7 +51,7 @@ const NoteForm = ({ noteToBeEdited, onSubmit, cancelNoteEditing }) => {
         />
         <div className="form-group content-center">
           <Button
-            title="Save Note"
+            title="Add Note"
             onClick={handleOnSubmit}
           />
           {
