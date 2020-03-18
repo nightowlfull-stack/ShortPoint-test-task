@@ -1,7 +1,7 @@
 export const initialState = {
   timeCreated: '',
   noteText: '',
-  color: 'Red',
+  color: 'red',
   error: {},
 }
 
