@@ -7,7 +7,6 @@ const CustomTextField = ({ id, label, value, errorMessage, ...props }) => {
       <label>{label}</label>
       <input
         class="form-control"
-        required
         type="text"
         error={!!errorMessage}
         id={id}
