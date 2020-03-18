@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ShortPoint-test-task/static/css/main.bbd29fba.chunk.css",
+    "main.js": "/ShortPoint-test-task/static/js/main.f97c3dca.chunk.js",
+    "main.js.map": "/ShortPoint-test-task/static/js/main.f97c3dca.chunk.js.map",
+    "runtime-main.js": "/ShortPoint-test-task/static/js/runtime-main.845760d7.js",
+    "runtime-main.js.map": "/ShortPoint-test-task/static/js/runtime-main.845760d7.js.map",
+    "static/js/2.bd149ac9.chunk.js": "/ShortPoint-test-task/static/js/2.bd149ac9.chunk.js",
+    "static/js/2.bd149ac9.chunk.js.map": "/ShortPoint-test-task/static/js/2.bd149ac9.chunk.js.map",
+    "index.html": "/ShortPoint-test-task/index.html",
+    "precache-manifest.0768cb796d632a7f066737c63ffaeedb.js": "/ShortPoint-test-task/precache-manifest.0768cb796d632a7f066737c63ffaeedb.js",
+    "service-worker.js": "/ShortPoint-test-task/service-worker.js",
+    "static/css/main.bbd29fba.chunk.css.map": "/ShortPoint-test-task/static/css/main.bbd29fba.chunk.css.map",
+    "static/js/2.bd149ac9.chunk.js.LICENSE.txt": "/ShortPoint-test-task/static/js/2.bd149ac9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.845760d7.js",
+    "static/js/2.bd149ac9.chunk.js",
+    "static/css/main.bbd29fba.chunk.css",
+    "static/js/main.f97c3dca.chunk.js"
+  ]
+}
