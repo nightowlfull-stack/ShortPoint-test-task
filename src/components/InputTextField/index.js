@@ -1,27 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './inputTextField.css'
 
-const CustomTextField = ({ id, label, value, errorMessage, ...props }) => {
+const CustomTextField = ({ label, value, errorMessage, ...props }) => {
   return (
     <div className="form-group">
       <label>{label}</label>
       <input
         className="form-control"
         type="text"
-        placeholder={errorMessage ? errorMessage : ''}
-        error={!!errorMessage}
-        id={id}
-        name={id}
         value={value}
-        fullWidth
         variant="outlined"
         {...props} />
+      {errorMessage && <span className='errorMsg'>{errorMessage}</span>}
     </div>
   );
 }
 
 CustomTextField.propTypes = {
-  id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   value: PropTypes.string,
   errorMessage: PropTypes.string,
