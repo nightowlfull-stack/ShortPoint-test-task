@@ -10,7 +10,7 @@ const Note = ({ note, editNote, deleteNote }) => {
         <div className="mainblock">
           <div className={`${note.color} borderleft`}></div>
           <div className="mainheadingblock">
-            <span className={`${note.color}-color`}>Note {note.id}</span>
+            <span className={`${note.color}-color`}>Note {note.id + 1}</span>
             <ul>
               <li onClick={editNote}><img src={pencilImage} /></li>
               <li onClick={deleteNote}><img src={trashImage} /></li>
@@ -19,7 +19,7 @@ const Note = ({ note, editNote, deleteNote }) => {
           <p className="textBlock">{note.noteText}</p>
         </div>
         <div className="datefield">
-          <span>{note.timeCreated}</span>
+          <span>{note.timeCreated.slice(0, note.timeCreated.indexOf(',') + 1) + note.timeCreated.slice(note.timeCreated.indexOf(',') + 6, note.timeCreated.length)}</span>
         </div>
       </div>
     </div >
