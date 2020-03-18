@@ -4,7 +4,7 @@ import { reducer, initialState } from '../../reducers/noteForm';
 import { validateNote } from '../../validations/noteValidator'
 import InputField from '../../../../components/InputTextField'
 import SelectField from '../../../../components/SelectField'
-import Button from '../../../../components/CenterButton'
+import Button from '../../../../components/Button'
 import { COLOR_OPTIONS } from '../../../../constants'
 
 const input = {
