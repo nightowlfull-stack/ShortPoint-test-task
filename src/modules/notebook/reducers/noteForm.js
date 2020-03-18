@@ -8,7 +8,7 @@ export const initialState = {
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'noteText':
-      return { ...state, noteText: action.data };
+      return { ...state, noteText: action.data, error: {} };
     case 'color':
       return { ...state, color: action.data };
     case 'timeCreated':
